@@ -15,30 +15,27 @@
 
 ### Grundfunktionen
 
-* ein User hat einen Account (Autentifiziert sich mit Email-Adresse und passwort)
-* ein User verfügt über eine Frendesliste
+* ein User hat einen Account (Autentifiziert sich mit E-Mail-Adresse und passwort); wird durch UUID eindeutig identifiziert
+* ein User verfügt über eine Freundesliste; kann freunde mithilfe UUID hizufügen
 * ein User kann einem anderen User Nachrichten senden
 
 ### Erweiterte Funktionen
 
+#### Vorgegeben
+
+* User können Gruppen anlegen
 * User Können Gruppen beitreten und darin Nachrichten versenden
-* eine Gruppe kann von einem Gruppenmitglied, welches über Gruppenadministratorenberechtigung verfügt verwaltet werden (löschen, umbenennen, mitglieder, entfernen)
-* Nachrichten beinhalten arbiträre daten, deren typ angegeben wird. Nachrichteninhalt wird vom client interpretiert (erweiterbarkeit)
+* eine Gruppe kann von einem Gruppenmitglied, welches über Gruppenadministratorenberechtigung verfügt verwaltet werden (löschen, umbenennen, Mitglieder entfernen)
+* Nachrichten beinhalten arbiträre Daten
+* Datentyp der Nachricht wird in Nachricht festgehalten
+* Nachrichteninhalt wird vom Client interpretiert (Erweiterbarkeit)
 
-## Designentscheidungen Datenbank 
+#### Eigene Ideen
 
-### Unterscheidung 1:1-Konversation/Gruppenkonversation
-
-#### Jede KOnversation ist ein Channel
-* Sämtliche Konversationen finden in Channels statt
-* 1:1 Konversationen werden ähnlich wie Gruppenkonversationen behandelt
-
-#### alle Konversationstypen haben eine Tabellenübergreifend eizigartige id
-* Gruppen und 1:1-Konversationen haben tabellenübergreifend einzigartige Primärschlüssel (UUID/Sequence)
-* Eine Tabelle hält alle Nachrichten
-* Nachrichten verweisen auf eine KoversationsID
-* Gruppen, 1:1-Konversationen und Nachrichten müssen gejoint werden
-
-#### 1:1-Nachrichten und Gruppennachrichten werden separat gespeichert
-* zwischen Gruppen und 1:1-Konversationen wird unterschieden
-* jeweils eine Tabelle speichert alle Gruppennachrichten/1:1-Nachrichten
+* Verschlüsselung Socketverbindung
+* Verschlüsselung Ende-Ende (Eigentlicher Nachrichteninhalt)
+* Blockierung von Nutzern
+* Hinzufügen von Notizen zu Nutzern
+* Hinzufügen von Nicknamen zu Nutzern
+* Lese-/Empfangsbestätigung
+* "typing indicator"
