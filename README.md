@@ -30,10 +30,17 @@ können User untereinander Nachrichten austauschen.
 
 ### eigene Erweiterte Funktionen
 
+#### hohe Priorität
+
 * Verschlüsselung Socketverbindung
 * Verschlüsselung Ende-Ende (Eigentlicher Nachrichteninhalt)
 * Blockierung von Nutzern
-* Hinzufügen von Notizen zu Nutzern
-* Hinzufügen von Nicknamen zu Nutzern
 * Lese-/Empfangsbestätigung
 * "typing indicator"
+
+#### niedrige Priorität
+
+* auf Nachrichten antworten
+* Reaktionen auf Nachrichten
+* Hinzufügen von Notizen zu Nutzern
+* Hinzufügen von Nicknamen zu Nutzern
