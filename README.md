@@ -3,6 +3,21 @@
 Es soll für ein Chatsystem ein Client – Serveranwendung geschrieben werden. Mit dieser
 können User untereinander Nachrichten austauschen.
 
+## Verweise
+
+### Generell
+
+* [Wekan Board](<https://wekan.lgsit.de/b/Ey9toWzCXSSerdjuB/projekt-3-chatsystem>)
+* [Pflichtenheft](Pflichtenheft.docx)
+* [Projektanforderungen](Projektanforderungen.pdf)
+
+### GitLab
+
+* [General](<https://gitlab.lgsit.de/projekt-3-chatsystem/general>)
+* [Database](<https://gitlab.lgsit.de/projekt-3-chatsystem/database>)
+* [Server](<https://gitlab.lgsit.de/projekt-3-chatsystem/server/>)
+* [Client](<https://gitlab.lgsit.de/projekt-3-chatsystem/client/>)
+
 ## Anforderungen
 
 ### Grundfunktionen
