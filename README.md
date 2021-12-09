@@ -20,17 +20,25 @@ können User untereinander Nachrichten austauschen.
 
 ## Anforderungen
 
+### Diagramme
+
+* ER-Diagramm
+* Klassendiagramm
+* Anwendungsfalldiagramm
+* Sequenzdiagramm (z.B. Nachricht senden/Gruppe erstellen/...)
+* Gantt-Diagramm
+
 ### Grundfunktionen
 
 * Ein User kann einen Account erzeugen und sich anmelden.
 * Ein User verfügt über eine „Freundesliste“ (Kontaktliste), wo er andere User erkennen kann.
 * User können Nachrichten versenden
-
-### Erweiterte Funktionen
-
 * User können Gruppen anlegen
 * User können Gruppen beitreten und darin Nachrichten versenden
 * eine Gruppe kann von einem Gruppenmitglied, welches über Gruppenadministratorenberechtigung verfügt verwaltet werden (löschen, umbenennen, Mitglieder entfernen)
+
+### Erweiterte Funktionen
+
 * Nachrichten beinhalten arbiträre Daten
 * Datentyp der Nachricht wird in Nachricht festgehalten
 * Nachrichteninhalt wird vom Client interpretiert (Erweiterbarkeit)
