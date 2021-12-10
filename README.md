@@ -8,7 +8,7 @@ können User untereinander Nachrichten austauschen.
 ### Generell
 
 * [Wekan Board](<https://wekan.lgsit.de/b/Ey9toWzCXSSerdjuB/projekt-3-chatsystem>)
-* [Gantt Chart](https://docs.google.com/spreadsheets/d/e/2PACX-1vTC0DLkoYmxA5_Yiwm0w857usjg7QYMmbXFCuoPP5qKv6U1duBaFtCWt_7MDkKb3OR_ossJ-aOjdv72/pubhtml?widget=false&headers=false&chrome=false)
+* [Gantt Chart](https://docs.google.com/spreadsheets/d/14PY8sXY7jv3Ta3U00aRHLJXFnqE1T4qXwJE6ikMxyYk)
 * [Pflichtenheft](Pflichtenheft.docx)
 * [Projektanforderungen](Projektanforderungen.pdf)
 
@@ -26,8 +26,8 @@ können User untereinander Nachrichten austauschen.
 * ER-Diagramm
 * Klassendiagramm
 * Anwendungsfalldiagramm
-* Sequenzdiagramm (z.B. Nachricht senden/Gruppe erstellen/...)
-* Gantt-Diagramm
+* Sequenzdiagramme (z.B. Nachricht senden/Gruppe erstellen/...)
+* [Gantt-Diagramm](<https://docs.google.com/spreadsheets/d/e/2PACX-1vTC0DLkoYmxA5_Yiwm0w857usjg7QYMmbXFCuoPP5qKv6U1duBaFtCWt_7MDkKb3OR_ossJ-aOjdv72/pubhtml?widget=false&headers=false&chrome=false>)
 
 ### Grundfunktionen
 
