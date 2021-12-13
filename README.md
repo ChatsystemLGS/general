@@ -48,8 +48,8 @@ können User untereinander Nachrichten austauschen.
 
 ### eigene Grundfunktionen
 
-* ein User hat einen Account (Autentifiziert sich mit E-Mail-Adresse und passwort); wird durch UUID eindeutig identifiziert
-* ein User verfügt über eine Freundesliste; kann freunde mithilfe UUID hizufügen
+* ein User hat einen Account (Autentifiziert sich mit E-Mail-Adresse und passwort); wird durch E-Mail-Adresse (oder id?) identifiziert
+* ein User verfügt über eine Freundesliste; kann freunde mithilfe E-Mail-Adresse hizufügen
 * ein User kann einem anderen User Nachrichten senden
 
 ### eigene Erweiterte Funktionen
