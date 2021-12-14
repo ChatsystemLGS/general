@@ -61,6 +61,7 @@ können User untereinander Nachrichten austauschen.
 * Blockierung von Nutzern
 * Lese-/Empfangsbestätigung
 * "typing indicator"
+* verification Mail
 
 #### niedrige Priorität
 
