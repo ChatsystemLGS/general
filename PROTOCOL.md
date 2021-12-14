@@ -2,17 +2,17 @@
 
 ## Grundlegende Designentscheidungen
 
-* es besteht eine socketverbindung zwischen client und server
-* der client kommuniziert mit dem Server indem er anfragen sendet und darauf Antworten erhält
-* anfragen bestehen immer aus einem Befehl und vom befehl abhängig vielen parametern
-* der Server kann mithilfe von events auch ohne die initiative der clientanwendung informationen an den client übermitteln
-* events werden vom client nicht beantwortet; sie können ignoriert werden
+* es besteht eine Socketverbindung zwischen client und server
+* der Client kommuniziert mit dem Server, indem er Anfragen sendet und darauf Antworten erhält
+* Anfragen bestehen immer aus einem Befehl und vom Befehl abhängig vielen Parametern
+* der Server kann mithilfe von Events auch ohne die Initiative der Clientanwendung Informationen an den Client übermitteln
+* Events werden vom Client nicht beantwortet; sie können ignoriert werden
 
 ## States
 
 ```
-└───CONNECTED           : stadium unmittelbar nach der Verbindung eines clients
-    └AUTHENTICATED      : stadium nach erfolgreicher anmeldung des clients
+└───CONNECTED           : Stadium unmittelbar nach der Verbindung eines Clients
+    └AUTHENTICATED      : Stadium nach erfolgreicher Anmeldung des Clients
 ```
 
 ## Statuscodes
@@ -29,8 +29,6 @@
 | PASSWORD_INVALID         | none                                   |
 | NOT_MEMBER_OF_CHANNEL    | none                                   |
 | MESSAGE_TOO_LONG         | MAX_MESSAGE_SIZE:Integer               |
-| PASSWORD_INVALID         | none                                   |
-| PASSWORD_INVALID         | none                                   |
 
 ## Befehle
 
