@@ -31,7 +31,8 @@
 | MESSAGE_TOO_LONG         | MAX_MESSAGE_SIZE:Integer                         |
 | TOO_MANY_MESSAGES        | lastMessage:Date, return value of called command |
 | CHANNEL_NOT_FOUND        | none                                             |
-| DM_ALREADY_EXISTING      | channel:Integer
+| DM_ALREADY_EXISTING      | channel:Integer                                  |
+| COMMAND_NOT_FOUND        | none                                             |
 
 ## Befehle
 
