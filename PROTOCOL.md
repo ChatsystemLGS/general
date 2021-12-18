@@ -144,6 +144,15 @@ return value(s)         : messages:Message[]
 potential status codes  : NOT_MEMBER_OF_CHANNEL, TOO_MANY_MESSAGES
 ```
 
+### QUIT
+
+```
+required state          : CONNECTED
+parameters              : none
+return value(s)         : none
+potential status codes  : none
+```
+
 ## Events
 
 ### EVENT:MESSAGE
