@@ -12,17 +12,28 @@
 
 ```
 └───CONNECTED           : Stadium unmittelbar nach der Verbindung eines Clients
-    └AUTHENTICATED      : Stadium nach erfolgreicher Anmeldung des Clients
+    ├AUTHENTICATED      : Stadium nach erfolgreicher Anmeldung des Clients
+    └DISCONNECTED       : Stadium nach beenden der Sitzung (-> ClientHandler )
 ```
 
 ## Statuscodes
 
+### Default (caused when command parsing fails)
+
 | Statuscode               | return value(s)                                  |
 |--------------------------|--------------------------------------------------|
 | OK                       | none/return value(s) of called command           |
-| INVALID_PARAMETER        | none                                             |
+| INVALID_PARAMETER        | index:Integer                                    |
 | NOT_ENOUGH_PARAMETERS    | numExpected:Integer                              |
 | TOO_MANY_PARAMETERS      | numExpected:Integer                              |
+| COMMAND_NOT_FOUND        | none                                             |
+| INTERNAL_SERVER_ERROR    | none (causes end of session)                     |
+| AUTHENTICATION_REQUIRED  | none                                             |
+
+### Command-Specific (caused when corresponding ProtocolException gets Thrown)
+
+| Statuscode               | return value(s)                                  |
+|--------------------------|--------------------------------------------------|
 | EMAIL_ALREADY_REGISTERED | none                                             |
 | PASSWORD_REQ_NOT_MET     | none                                             |
 | EMAIL_NOT_REGISTERED     | none                                             |
@@ -31,8 +42,8 @@
 | MESSAGE_TOO_LONG         | MAX_MESSAGE_SIZE:Integer                         |
 | TOO_MANY_MESSAGES        | lastMessage:Date, return value of called command |
 | CHANNEL_NOT_FOUND        | none                                             |
-| DM_ALREADY_EXISTING      | channel:Integer                                  |
-| COMMAND_NOT_FOUND        | none                                             |
+| USER_NOT_FOUND           | none                                             |
+| DM_ALREADY_EXISTS        | channel:Integer                                  |
 
 ## Befehle
 
@@ -96,16 +107,30 @@ potential status codes  : NOT_MEMBER_OF_CHANNEL
 required state          : AUTHENTICATED
 parameters              : email:String
 return value(s)         : user:User
-potential status codes  : EMAIL_NOT_REGISTERED
+potential status codes  : USER_NOT_FOUND
+```
+
+```
+required state          : AUTHENTICATED
+parameters              : id:Integer
+return value(s)         : user:User
+potential status codes  : USER_NOT_FOUND
 ```
 
 ### ADDFRIEND
 
 ```
 required state          : AUTHENTICATED
+parameters              : id:Integer
+return value(s)         : none
+potential status codes  : USER_NOT_FOUND
+```
+
+```
+required state          : AUTHENTICATED
 parameters              : email:String
 return value(s)         : none
-potential status codes  : EMAIL_NOT_REGISTERED
+potential status codes  : USER_NOT_FOUND
 ```
 
 ### GETFRIENDS
@@ -126,13 +151,13 @@ return value(s)         : none
 potential status codes  : NOT_MEMBER_OF_CHANNEL, MESSAGE_TOO_LONG
 ```
 
-### SENDDM
+### CREATEDM
 
 ```
 required state          : AUTHENTICATED
-parameters              : userId:Integer, data:Byte[], dataType:Enum
+parameters              : userId:Integer
 return value(s)         : channel:Integer
-potential status codes  : EMAIL_NOT_REGISTERED, MESSAGE_TOO_LONG
+potential status codes  : DM_ALREADY_EXISTS
 ```
 
 ### RECEIVEMESSAGES
