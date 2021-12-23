@@ -13,7 +13,7 @@
 ```
 └───CONNECTED           : Stadium unmittelbar nach der Verbindung eines Clients
     ├AUTHENTICATED      : Stadium nach erfolgreicher Anmeldung des Clients
-    └DISCONNECTED       : Stadium nach beenden der Sitzung (-> ClientHandler )
+    └DISCONNECTED       : Stadium nach beenden der Sitzung (-> ClientHandler schließt verbindugn)
 ```
 
 ## Statuscodes
@@ -23,9 +23,9 @@
 | Statuscode               | return value(s)                                  |
 |--------------------------|--------------------------------------------------|
 | OK                       | none/return value(s) of called command           |
-| INVALID_PARAMETER        | index:Integer                                    |
 | NOT_ENOUGH_PARAMETERS    | numExpected:Integer                              |
 | TOO_MANY_PARAMETERS      | numExpected:Integer                              |
+| INVALID_PARAMETER        | index:Integer                                    |
 | COMMAND_NOT_FOUND        | none                                             |
 | INTERNAL_SERVER_ERROR    | none (causes end of session)                     |
 | AUTHENTICATION_REQUIRED  | none                                             |
@@ -105,14 +105,7 @@ potential status codes  : NOT_MEMBER_OF_CHANNEL
 
 ```
 required state          : AUTHENTICATED
-parameters              : email:String
-return value(s)         : user:User
-potential status codes  : USER_NOT_FOUND
-```
-
-```
-required state          : AUTHENTICATED
-parameters              : id:Integer
+parameters              : id:Integer / email:String
 return value(s)         : user:User
 potential status codes  : USER_NOT_FOUND
 ```
@@ -121,14 +114,7 @@ potential status codes  : USER_NOT_FOUND
 
 ```
 required state          : AUTHENTICATED
-parameters              : id:Integer
-return value(s)         : none
-potential status codes  : USER_NOT_FOUND
-```
-
-```
-required state          : AUTHENTICATED
-parameters              : email:String
+parameters              : id:Integer / email:String
 return value(s)         : none
 potential status codes  : USER_NOT_FOUND
 ```
@@ -157,7 +143,7 @@ potential status codes  : NOT_MEMBER_OF_CHANNEL, MESSAGE_TOO_LONG
 required state          : AUTHENTICATED
 parameters              : userId:Integer
 return value(s)         : channel:Integer
-potential status codes  : DM_ALREADY_EXISTS
+potential status codes  : USER_NOT_FOUND, DM_ALREADY_EXISTS
 ```
 
 ### RECEIVEMESSAGES
