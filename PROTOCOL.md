@@ -51,7 +51,7 @@
 
 ```
 required state          : CONNECTED
-parameters              : emailAddress:String, password:String
+parameters              : emailAddress:String, nickname:String, password:String
 return value(s)         : none
 potential status codes  : EMAIL_ALREADY_REGISTERED, PASSWORD_REQ_NOT_MET
 ```
