@@ -178,6 +178,7 @@ parameters              : message
 * Attribute von objekten werden mit Leerzeichen voneinander getrennt
 * Listen werden kommagetrennt innerhalb Eckiger Klammern übertragen
 * Binärdaten und strings werden base64-codiert übertragen
+* leere strings werden als bindestrich gekennzeichnet (`"" => "-"`), weil `((Base64) "") => ""`
 
 ### Message
 
