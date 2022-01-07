@@ -47,6 +47,8 @@
 
 ## Befehle
 
+Befehle minimalisieren? (GETCHANNES -> channelIDs; GETCHANNEL id -> details)
+
 ### REGISTER
 
 ```
@@ -111,6 +113,8 @@ potential status codes  : USER_NOT_FOUND
 ```
 
 ### ADDFRIEND
+
+müssen Freunde auch via email hinzugefügt werden können?
 
 ```
 required state          : AUTHENTICATED
