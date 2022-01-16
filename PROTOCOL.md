@@ -45,9 +45,12 @@
 | USER_NOT_FOUND           | none                                                                                                   |
 | DM_ALREADY_EXISTS        | channel:Integer                                                                                        |
 
-## Befehle
+## Commands
 
 mabye remove functionality from single commands? (GETCHANNELS -> channelIDs; GETCHANNEL id -> details)
+
+* commands can only return either an array **or** multiple values as defined here
+* only 1-dimensional arrays can be returned
 
 ### REGISTER
 
@@ -178,7 +181,7 @@ parameters              : message
 
 * parameters are seperated from each otehr with blanks
 * attributes of objects get are separated from each other with blanks
-* lists get transmittet as colon separated entrys enclosed by square brackets
+* arrays get transmittet as colon separated entrys enclosed by square brackets
 * binary data and strings are transmitted base64 encoded
 * empty strings are marked with a dash  (`"" => "-"`) because `((Base64) "") => ""`
 
@@ -197,7 +200,7 @@ dataType:Enum
 ```
 channel:Integer
 type:Enum
-channelName:String (optional)
+channelName:String
 ```
 
 ### User
