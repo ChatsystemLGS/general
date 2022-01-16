@@ -1,22 +1,22 @@
-# Protokoll für die Kommunikation zwischen Client und Server
+# Protocol for communication between Client and Server
 
-## Grundlegende Designentscheidungen
+## Basic design decisions
 
-* es besteht eine Socketverbindung zwischen client und server
-* der Client kommuniziert mit dem Server, indem er Anfragen sendet und darauf Antworten erhält
-* Anfragen bestehen immer aus einem Befehl und vom Befehl abhängig vielen Parametern
-* der Server kann mithilfe von Events auch ohne die Initiative der Clientanwendung Informationen an den Client übermitteln
-* Events werden vom Client nicht beantwortet; sie können ignoriert werden
+* there is one socket connection between client and server
+* the client communicates with the server by sending requests and getting responses from the server
+* requests always consist of a command and a number of parameters depending on the command
+* by using events, the server can send data to the client without the client making a request
+* the client does not respond to events; they might even get completeöy ignored
 
 ## States
 
 ```
-└───CONNECTED           : Stadium unmittelbar nach der Verbindung eines Clients
-    ├AUTHENTICATED      : Stadium nach erfolgreicher Anmeldung des Clients
-    └DISCONNECTED       : Stadium nach beenden der Sitzung (-> ClientHandler schließt verbindugn)
+└───CONNECTED           : immediately after the client connects
+    ├AUTHENTICATED      : succesfull login
+    └DISCONNECTED       : end of session -> ClientHandler closes connection
 ```
 
-## Statuscodes
+## Status Codes
 
 ### Default (caused when command parsing fails)
 
@@ -47,7 +47,7 @@
 
 ## Befehle
 
-Befehle minimalisieren? (GETCHANNES -> channelIDs; GETCHANNEL id -> details)
+mabye remove functionality from single commands? (GETCHANNELS -> channelIDs; GETCHANNEL id -> details)
 
 ### REGISTER
 
@@ -176,11 +176,11 @@ parameters              : message
 
 ## Datatypes
 
-* Parameter werden mit Leerzeichen voneninander getrennt
-* Attribute von objekten werden mit Leerzeichen voneinander getrennt
-* Listen werden kommagetrennt innerhalb Eckiger Klammern übertragen
-* Binärdaten und strings werden base64-codiert übertragen
-* leere strings werden als bindestrich gekennzeichnet (`"" => "-"`), weil `((Base64) "") => ""`
+* parameters are seperated from each otehr with blanks
+* attributes of objects get are separated from each other with blanks
+* lists get transmittet as colon separated entrys enclosed by square brackets
+* binary data and strings are transmitted base64 encoded
+* empty strings are marked with a dash  (`"" => "-"`) because `((Base64) "") => ""`
 
 ### Message
 
