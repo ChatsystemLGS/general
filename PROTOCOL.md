@@ -32,18 +32,18 @@
 
 ### Command-Specific (caused when corresponding ProtocolException gets Thrown)
 
-| Statuscode               | return value(s)                                  |
-|--------------------------|--------------------------------------------------|
-| EMAIL_ALREADY_REGISTERED | none                                             |
-| PASSWORD_REQ_NOT_MET     | none                                             |
-| EMAIL_NOT_REGISTERED     | none                                             |
-| PASSWORD_INVALID         | none                                             |
-| NOT_MEMBER_OF_CHANNEL    | none                                             |
-| MESSAGE_TOO_LONG         | MAX_MESSAGE_SIZE:Integer                         |
-| TOO_MANY_MESSAGES        | lastMessage:Date, return value of called command |
-| CHANNEL_NOT_FOUND        | none                                             |
-| USER_NOT_FOUND           | none                                             |
-| DM_ALREADY_EXISTS        | channel:Integer                                  |
+| Statuscode               | return value(s)                                                                                        |
+|--------------------------|--------------------------------------------------------------------------------------------------------|
+| EMAIL_ALREADY_REGISTERED | none                                                                                                   |
+| PASSWORD_REQ_NOT_MET     | none                                                                                                   |
+| EMAIL_NOT_REGISTERED     | none                                                                                                   |
+| PASSWORD_INVALID         | none                                                                                                   |
+| NOT_MEMBER_OF_CHANNEL    | none                                                                                                   |
+| MESSAGE_TOO_LONG         | MAX_MESSAGE_SIZE:Integer                                                                               |
+| TOO_MANY_MESSAGES        | messages:Message[] (return the latest n messages from tUntil going back in time ordered by timestamp)  |
+| CHANNEL_NOT_FOUND        | none                                                                                                   |
+| USER_NOT_FOUND           | none                                                                                                   |
+| DM_ALREADY_EXISTS        | channel:Integer                                                                                        |
 
 ## Befehle
 
@@ -114,11 +114,9 @@ potential status codes  : USER_NOT_FOUND
 
 ### ADDFRIEND
 
-müssen Freunde auch via email hinzugefügt werden können?
-
 ```
 required state          : AUTHENTICATED
-parameters              : id:Integer / email:String
+parameters              : id:Integer
 return value(s)         : none
 potential status codes  : USER_NOT_FOUND
 ```
