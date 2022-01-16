@@ -181,7 +181,7 @@ parameters              : message
 
 * parameters are seperated from each otehr with blanks
 * attributes of objects get are separated from each other with blanks
-* arrays get transmittet as colon separated entrys enclosed by square brackets
+* arrays get transmittet as colon separated entrys enclosed by square brackets (no blank after colon)
 * binary data and strings are transmitted base64 encoded
 * empty strings are marked with a dash  (`"" => "-"`) because `((Base64) "") => ""`
 
@@ -222,7 +222,7 @@ note:String
 < OK
 
 > GETPUBLICGROUPS
-< OK [2 TWlyY29zIE1vYmJpbmtyZWlz, 6 SVQgQkcxMw==]
+< OK [2 TWlyY29zIE1vYmJpbmtyZWlz,6 SVQgQkcxMw==]
 
 > JOINGROUP 2
 < OK
@@ -237,7 +237,7 @@ note:String
 < OK [56 TWlkbGFuZA== friend null]
 
 > GETCHANNELS
-< OK [2 publicGroup TWlyY29zIE1vYmJpbmtyZWlz, 3 privateGroup RG9taW5pa3Mgc3Rpbmt0aWdlIFN0dWJl]
+< OK [2 publicGroup TWlyY29zIE1vYmJpbmtyZWlz,3 privateGroup RG9taW5pa3Mgc3Rpbmt0aWdlIFN0dWJl]
 
 > GETCHANNELMEMBERS 2
 < OK [56 TWlkbGFuZA== friend null, 3 Q29iYWx0 null null]
