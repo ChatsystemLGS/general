@@ -66,7 +66,7 @@ potential status codes  : EMAIL_ALREADY_REGISTERED, PASSWORD_REQ_NOT_MET
 ```
 required state          : CONNECTED
 parameters              : emailAddress:String, password:String
-return value(s)         : none
+return value(s)         : id:Integer
 potential status codes  : EMAIL_NOT_REGISTERED, PASSWORD_INVALID
 ```
 
@@ -219,7 +219,7 @@ note:String
 < OK
 
 > LOGIN ZmVsaXguaGF1cHRtYW5uQGxncy1odS5ldQ== Z0VoIGVpTSwxMjM0
-< OK
+< OK 4
 
 > GETPUBLICGROUPS
 < OK [2 TWlyY29zIE1vYmJpbmtyZWlz,6 SVQgQkcxMw==]
