@@ -70,3 +70,19 @@ können User untereinander Nachrichten austauschen.
 * Reaktionen auf Nachrichten
 * Hinzufügen von Notizen zu Nutzern
 * Hinzufügen von Nicknamen zu Nutzern
+
+## Software 
+
+* [Eclipse](https://www.eclipse.org/) (IDE)
+* [Visual Studio Code](https://code.visualstudio.com/) (Editor/IDE)
+* [PlantUML](https://plantuml.com/) (Diagram)
+* [Dia](http://dia-installer.de/) (Diagram)
+* [Astah](https://astah.net/) (Diagram/Modeling)
+
+### Tools/Frameworks/Librarys/...
+
+* [Gradle](https://gradle.org/) (Build Tool)
+* [plantuml-gradle-plugin](https://github.com/RoRoche/plantuml-gradle-plugin/) (Sourcecode -> .puml)
+* [plantuml-gradle-plugin](https://github.com/red-green-coding/plantuml-gradle-plugin/) (.puml -> .svg/.png/...)
+* [MariaDB Connector](https://mariadb.com/kb/en/about-mariadb-connector-j/) (JDBC connector)
+* [MigLayout](https://www.miglayout.com/) (Swing Layout Manager)
