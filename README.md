@@ -18,15 +18,16 @@ können User untereinander Nachrichten austauschen.
 * [Database](<https://gitlab.lgsit.de/projekt-3-chatsystem/database>)
 * [Server](<https://gitlab.lgsit.de/projekt-3-chatsystem/server/>)
 * [Client](<https://gitlab.lgsit.de/projekt-3-chatsystem/client/>)
+* [Protocol](PROTOCOL.md)
 
 ## Anforderungen
 
 ### Diagramme
 
-* ER-Diagramm
-* Klassendiagramm
+* [ER-Diagramm](https://gitlab.lgsit.de/projekt-3-chatsystem/database/-/blob/master/diagrams/database-final.svg)
+* [Klassendiagramm](https://gitlab.lgsit.de/projekt-3-chatsystem/server/-/blob/master/diagrams/uml.svg)
 * Anwendungsfalldiagramm
-* Sequenzdiagramme (z.B. Nachricht senden/Gruppe erstellen/...)
+* [Sequenzdiagramme](https://gitlab.lgsit.de/projekt-3-chatsystem/server/-/blob/master/diagrams/sequence.svg)
 * [Gantt-Diagramm](<https://docs.google.com/spreadsheets/d/e/2PACX-1vTC0DLkoYmxA5_Yiwm0w857usjg7QYMmbXFCuoPP5qKv6U1duBaFtCWt_7MDkKb3OR_ossJ-aOjdv72/pubhtml?widget=false&headers=false&chrome=false>)
 
 ### Grundfunktionen
