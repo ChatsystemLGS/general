@@ -18,7 +18,7 @@
 
 ## Status Codes
 
-### Default (caused when command parsing fails)
+### Default (occurs when command parsing fails)
 
 | Statuscode               | return value(s)                                  |
 |--------------------------|--------------------------------------------------|
@@ -30,7 +30,7 @@
 | INTERNAL_SERVER_ERROR    | none (causes end of session)                     |
 | AUTHENTICATION_REQUIRED  | none                                             |
 
-### Command-Specific (caused when corresponding ProtocolException gets Thrown)
+### Command-Specific (occurs when corresponding ProtocolException gets Thrown)
 
 | Statuscode               | return value(s)                                                                                        |
 |--------------------------|--------------------------------------------------------------------------------------------------------|
@@ -181,7 +181,7 @@ parameters              : message
 
 * parameters are seperated from each otehr with blanks
 * attributes of objects get are separated from each other with blanks
-* arrays get transmittet as colon separated entrys enclosed by square brackets (no blank after colon)
+* arrays get transmittet as colon separated entrys enclosed by square brackets (no blank after comma)
 * binary data and strings are transmitted base64 encoded
 * empty strings are marked with a dash  (`"" => "-"`) because `((Base64) "") => ""`
 
