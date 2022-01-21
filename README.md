@@ -9,7 +9,6 @@ können User untereinander Nachrichten austauschen.
 
 * [Wekan Board](<https://wekan.lgsit.de/b/Ey9toWzCXSSerdjuB/projekt-3-chatsystem>)
 * [Gantt Chart](https://docs.google.com/spreadsheets/d/14PY8sXY7jv3Ta3U00aRHLJXFnqE1T4qXwJE6ikMxyYk)
-* [Pflichtenheft](Pflichtenheft.docx)
 * [Projektanforderungen](Projektanforderungen.pdf)
 
 ### GitLab
