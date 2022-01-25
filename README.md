@@ -74,6 +74,7 @@ können User untereinander Nachrichten austauschen.
 
 * [Eclipse](https://www.eclipse.org/) (IDE)
 * [Visual Studio Code](https://code.visualstudio.com/) (Editor/IDE)
+* [IntelliJ](https://www.jetbrains.com/idea/) (IDE)
 * [PlantUML](https://plantuml.com/) (Diagram)
 * [Dia](http://dia-installer.de/) (Diagram)
 * [Astah](https://astah.net/) (Diagram/Modeling)
@@ -85,3 +86,5 @@ können User untereinander Nachrichten austauschen.
 * [plantuml-gradle-plugin](https://github.com/red-green-coding/plantuml-gradle-plugin/) (.puml -> .svg/.png/...)
 * [MariaDB Connector](https://mariadb.com/kb/en/about-mariadb-connector-j/) (JDBC connector)
 * [MigLayout](https://www.miglayout.com/) (Swing Layout Manager)
+* [fontawesome](https://fontawesome.com/)
+* [Scenebuilder](https://gluonhq.com/products/scene-builder/) (JavaFX Layout Manager, integriert in IntelliJ)
