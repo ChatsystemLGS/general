@@ -86,5 +86,6 @@ können User untereinander Nachrichten austauschen.
 * [plantuml-gradle-plugin](https://github.com/red-green-coding/plantuml-gradle-plugin/) (.puml -> .svg/.png/...)
 * [MariaDB Connector](https://mariadb.com/kb/en/about-mariadb-connector-j/) (JDBC connector)
 * [MigLayout](https://www.miglayout.com/) (Swing Layout Manager)
+* [JavaFX](https://openjfx.io/) (Java Client Application Platform)
 * [fontawesome](https://fontawesome.com/)
 * [Scenebuilder](https://gluonhq.com/products/scene-builder/) (JavaFX Layout Manager, integriert in IntelliJ)
