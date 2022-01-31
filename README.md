@@ -13,20 +13,20 @@ können User untereinander Nachrichten austauschen.
 
 ### GitLab
 
-* [General](<https://gitlab.lgsit.de/projekt-3-chatsystem/general>)
-* [Database](<https://gitlab.lgsit.de/projekt-3-chatsystem/database>)
-* [Server](<https://gitlab.lgsit.de/projekt-3-chatsystem/server/>)
-* [Client](<https://gitlab.lgsit.de/projekt-3-chatsystem/client/>)
+* [General](<https://github.com/ChatsystemLGS/general>)
+* [Database](<https://github.com/ChatsystemLGS/database>)
+* [Server](<https://github.com/ChatsystemLGS/server/>)
+* [Client](<https://github.com/ChatsystemLGS/client/>)
 * [Protocol](PROTOCOL.md)
 
 ## Anforderungen
 
 ### Diagramme
 
-* [ER-Diagramm](https://gitlab.lgsit.de/projekt-3-chatsystem/database/-/blob/master/diagrams/database-final.svg)
-* [Klassendiagramm](https://gitlab.lgsit.de/projekt-3-chatsystem/server/-/blob/master/diagrams/uml.svg)
-* Anwendungsfalldiagramm (wäre riesig und extrem unübersichtlich geworden, informationsgehalt wäre eher gering)
-* [Sequenzdiagramme](https://gitlab.lgsit.de/projekt-3-chatsystem/server/-/blob/master/diagrams/sequence.svg)
+* [ER-Diagramm](https://github.com/ChatsystemLGS/database/blob/master/diagrams/database-final.svg)
+* [Klassendiagramm](https://github.com/ChatsystemLGS/server/blob/master/diagrams/uml.svg)
+* Anwendungsfalldiagramm (wäre riesig und extrem unübersichtlich geworden, Informationsgehalt wäre eher gering)
+* [Sequenzdiagramme](https://github.com/ChatsystemLGS/server/blob/master/diagrams/sequence.svg)
 * [Gantt-Diagramm](<https://docs.google.com/spreadsheets/d/e/2PACX-1vTC0DLkoYmxA5_Yiwm0w857usjg7QYMmbXFCuoPP5qKv6U1duBaFtCWt_7MDkKb3OR_ossJ-aOjdv72/pubhtml?widget=false&headers=false&chrome=false>)
 
 ### Grundfunktionen
